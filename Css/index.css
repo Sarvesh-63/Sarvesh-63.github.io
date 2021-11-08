@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -30,8 +34,10 @@ html {
   padding: 30px 0px;
   top: 0;
   transition: 0.3s linear;
+  z-index: 999;
   
 }
+
 .logo {
   width: 50px;
   height: 50px;
@@ -51,12 +57,15 @@ html {
 }
 
 
+
+
 .navbar-menu a {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 600;
   margin-left: 50px;
   transition: 0.2s linear;
+  
 }
 
 .sticky {
@@ -65,11 +74,13 @@ html {
 }
 
 .navbar-menu a:hover {
-  color: #ffa588 !important;
+  color: #ffffff !important;
+  
 }
 
 .sticky .navbar-menu a {
   color: #111;
+ 
 }
 
 .menu-toggler {
@@ -79,7 +90,7 @@ html {
   cursor: pointer;
   position: relative;
   outline: none;
-  z-index: 999;
+  
   display: none;
 }
 
@@ -100,6 +111,18 @@ html {
   background-attachment: fixed;
   
 }
+#home .circle {
+  position: absolute;
+  width: 1500px;
+  height: 1350px;
+  border-radius: 50%;
+  left : 950px;
+  top: -680px;
+  background: #FFA688;
+  opacity: 0.75;
+  z-index: 0;
+  }
+
 
 
 #home .inner-width {
@@ -188,6 +211,7 @@ html {
   margin-top: 100px;
   width: 40%;
   height: 40%;
+  z-index:99  ;
 }
 .line2  {
   width: 2px;
@@ -291,7 +315,17 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
 }
+.circle1 {
+  position: absolute;
+width: 3430px;
+height: 1300px;
+border-radius: 50%;
+left: -3300px;
+top: 1050px;
 
+background: #FFA688;
+opacity: 0.75;
+}
 .titleSection::after {
   width: 300px;
   content: "";
@@ -430,6 +464,7 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
 }
+
 
 
 .contact-form {
