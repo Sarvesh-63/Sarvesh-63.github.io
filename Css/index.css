@@ -175,12 +175,15 @@ html {
 
 .heroComp {
   float: left;
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   text-align: left;
   margin-left: 100px;
   margin-top: 200px;
   flex-direction: column;
+}
+.heroComp span {
+  display : block;
 }
 
 
